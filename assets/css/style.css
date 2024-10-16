@@ -13499,6 +13499,26 @@ figcaption {
     }
 }
 
+.inner ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.inner li {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--color-lightn);
+    padding-top: 15px;
+    list-style-type: '👉';
+    padding-inline-start: 1ch;
+    opacity: 0.9;
+}
+
+.inner li :hover {
+    color: white;
+}
+
+
 .slide .content .inner .description {
     font-size: 16px;
     line-height: 30px;
@@ -15042,14 +15062,14 @@ div#featured-project-carousel {
 }
 
 .rn-nav-list .nav-item {
-    flex-basis: 25%;
+    flex-basis: 33.33%;
     text-align: center;
     margin-top: 0;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .rn-nav-list .nav-item {
-        flex-basis: 25%;
+        flex-basis: 33.33%;
     }
 }
 
@@ -15121,6 +15141,13 @@ div#featured-project-carousel {
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: 500;
+}
+
+.tab-maintitle {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 62px;
+    color: var(--color-lightn);
 }
 
 .personal-experience-inner .content .maintitle {
@@ -15250,6 +15277,12 @@ div#featured-project-carousel {
     transform: translateY(-7px);
     background: #1b1c1d;
     z-index: 0;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #1a1d23;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 @media only screen and (max-width: 479px) {
@@ -15419,7 +15452,7 @@ div#featured-project-carousel {
     display: flex;
     align-items: center;
     flex-basis: 80%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -20410,6 +20443,13 @@ body.white-version {
 
 .white-version .progress-charts h6.heading {
     color: var(--color-heading-wv);
+    font-weight: 500;
+}
+
+.app-subtitle {
+    color: var(--color-subtitle);
+    font-size: 14px;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 
