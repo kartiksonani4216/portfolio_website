@@ -1,0 +1,164 @@
+1. Doctor Appointment
+
+***********
+State Management
+- Bloc
+PlatForm
+- Android, ios
+PaymentGetway
+- Stripe
+Functionality
+- doctor and patient management system with responsive design
+- appointment booking system
+- Implement smooth animation.
+- multi language supported
+- Map Functionality (Google Api)
+- push notification and schedule appointment nortificaiton
+- Firebase 
+- Api Integration -> Dio Service
+- video call -> agora sdk
+***********
+
+2. V-Translate 
+
+***********
+State Management
+- Bloc
+PlatForm
+- Android, ios
+Authentication
+- Twitter, Google, Anonymous
+Purchase
+- InApp Purchase (Revenue Cat)
+Functionality 
+- speech to text, text to speech, google apis, offline translate
+- multi language translate at same time
+- translate list easy to tweet on twitter and share whatsapp 
+- you can get long description from output translation via ai
+- firebase database use for store translation history .
+***********
+
+3. Upifyme
+
+***********
+State Management
+- Getx
+PlatForm
+- Android, ios
+Authentication
+- Google, Apple , facebook
+Purchase
+- In App Purchase
+Functionality 
+- Generate personalised report based on quiz, video observation question and game play. Find college and university based on your report.
+- Flutter + unity (Game Play)
+- custom video player create
+- Branch io (Deep Link)
+- Firebase (Anayltics , Crashyltics, Push Notification)
+- socket for communication
+- custom chatbot
+***********
+
+
+4. Grocery App
+
+***********
+
+State Management
+- Getx
+PlatForm
+- Android, ios
+Purchase
+- In App Purchase
+Functionality 
+- user authentication
+- online purchase grocery item
+- delivery tracking
+- one signal notification for order status
+- firebase anayltics using for view sales reports, popular products, and user activities to monitor the app’s performance.
+***********
+
+
+
+5. Ace Jackpot
+
+***********
+State Management
+- Getx
+PlatForm
+- Android, ios
+Authentication
+- Google, Apple, Facebook
+Purchase
+- Stripe
+Functionality 
+- casino base game
+- Tournament, Wallet, Leaderboard, Daily Reward,
+- Flutter + unity (Game Play)
+***********
+
+6. App & Software Update
+
+***********
+State Management
+- Getx
+PlatForm
+- Android
+Functionality 
+- manage app and software update from app
+- check all the app information.
+- check your device sound, touch, flashlight, battery perfomance, camera.
+***********
+
+7. Reminder App
+
+***********
+State Management
+- Bloc
+PlatForm
+- Android, ios
+Functionality 
+- Organise Your Task, Schedule notification for task, invite friend to collaborate on tasks and projects.
+***********
+
+8. Pdf Reader
+
+***********
+State Management
+- Bloc
+PlatForm
+- Android, ios
+Functionality 
+- pdf viewer, generate invoice with custom template
+***********
+
+9. Location Tracker 
+
+***********
+State Management
+- Getx
+PlatForm
+- Android, ios
+Functionality 
+- track your current location with custom icon marker.
+- get location from address.
+- Inviting members to join movement
+- Create, Save, View saved, record or delete self-made trips
+- Google Maps
+***********
+
+
+10. Music App
+
+***********
+State Management
+- Getx
+PlatForm
+- Android, ios
+Functionality 
+- responsive design with smooth animation
+- implement custom music player with wave animation
+- recording your voice and save into firebase
+- create playlists and mark your favorites for quick access
+- rest api
+***********

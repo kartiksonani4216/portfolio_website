@@ -1,12 +1,12 @@
-(function($) {
+(function ($) {
     'use strict';
 
     var imJs = {
-        m: function(e) {
+        m: function (e) {
             imJs.d();
             imJs.methods();
         },
-        d: function(e) {
+        d: function (e) {
             this._window = $(window),
                 this._document = $(document),
                 this._body = $('body'),
@@ -14,7 +14,7 @@
 
         },
 
-        methods: function(e) {
+        methods: function (e) {
             imJs.featherAtcivation();
             imJs.backToTopInit();
             imJs.mobileMenuActive();
@@ -33,29 +33,29 @@
         },
 
 
-        activePopupDemo: function(e) {
-            $('.popuptab-area li a.demo-dark').on('click', function(e) {
+        activePopupDemo: function (e) {
+            $('.popuptab-area li a.demo-dark').on('click', function (e) {
                 $('.demo-modal-area').addClass('dark-version');
                 $('.demo-modal-area').removeClass('white-version');
             });
 
-            $('.popuptab-area li a.demo-light').on('click', function(e) {
+            $('.popuptab-area li a.demo-light').on('click', function (e) {
                 $('.demo-modal-area').removeClass('dark-version');
                 $('.demo-modal-area').addClass('white-version');
             })
         },
 
-        demoActive: function(e) {
-            $('.rn-right-demo').on('click', function(e) {
+        demoActive: function (e) {
+            $('.rn-right-demo').on('click', function (e) {
                 $('.demo-modal-area').addClass('open');
             })
-            $('.demo-close-btn').on('click', function(e) {
+            $('.demo-close-btn').on('click', function (e) {
                 $('.demo-modal-area').removeClass('open');
             })
         },
 
-        contactForm: function() {
-            $('.rwt-dynamic-form').on('submit', function(e) {
+        contactForm: function () {
+            $('.rwt-dynamic-form').on('submit', function (e) {
                 e.preventDefault();
                 var _self = $(this);
                 var __selector = _self.closest('input,textarea');
@@ -68,7 +68,7 @@
                     type: "post",
                     dataType: 'json',
                     data: data,
-                    success: function(data) {
+                    success: function (data) {
                         _self.closest('div').find('button[type="submit"]').removeAttr('disabled');
                         if (data.code == false) {
                             _self.closest('div').find('[name="' + data.field + '"]');
@@ -79,7 +79,7 @@
                             _self.find('.rn-btn').after('<div class="success-msg"><p>' + data.success + '</p></div>');
                             _self.closest('div').find('input,textarea').val('');
 
-                            setTimeout(function() {
+                            setTimeout(function () {
                                 $('.success-msg').fadeOut('slow');
                             }, 5000);
                         }
@@ -91,12 +91,12 @@
 
 
 
-        wowActive: function() {
+        wowActive: function () {
             new WOW().init();
         },
 
-        smothScroll: function() {
-            $(document).on('click', '.smoth-animation', function(event) {
+        smothScroll: function () {
+            $(document).on('click', '.smoth-animation', function (event) {
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href')).offset().top - 50
@@ -104,8 +104,8 @@
             });
         },
         // two scroll spy
-        smothScroll_Two: function() {
-            $(document).on('click', '.smoth-animation-two', function(event) {
+        smothScroll_Two: function () {
+            $(document).on('click', '.smoth-animation-two', function (event) {
                 event.preventDefault();
                 $('html, body').animate({
                     scrollTop: $($.attr(this, 'href')).offset().top - 0
@@ -114,7 +114,7 @@
         },
 
 
-        stickyAdjust: function(e) {
+        stickyAdjust: function (e) {
             // Sticky Top Adjust..,
             $('.rbt-sticky-top-adjust').css({
                 top: 120
@@ -125,7 +125,7 @@
             });
         },
 
-        testimonialActivation: function() {
+        testimonialActivation: function () {
             $('.testimonial-activation').slick({
                 infinite: true,
                 slidesToShow: 1,
@@ -168,28 +168,28 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: true,
-                            arrows: false,
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                }
                 ]
             });
 
@@ -205,28 +205,28 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: true,
-                            arrows: false,
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                }
                 ]
             });
 
@@ -241,28 +241,28 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-chevron-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-chevron-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            arrows: false,
-                        }
-                    },
-                    {
-                        breakpoint: 577,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            arrows: false,
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }
                 ]
             });
 
@@ -277,40 +277,40 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-chevron-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-chevron-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
                 ]
             });
 
         },
 
-        featherAtcivation: function() {
+        featherAtcivation: function () {
             feather.replace()
         },
 
 
-        backToTopInit: function() {
+        backToTopInit: function () {
             // declare variable
             var scrollTop = $('.backto-top');
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 // declare variable
                 var topPos = $(this).scrollTop();
                 // if user scrolls down - show scroll to top button
@@ -323,7 +323,7 @@
             });
 
             //Click event to scroll to top
-            $(scrollTop).on('click', function() {
+            $(scrollTop).on('click', function () {
                 $('html, body').animate({
                     scrollTop: 0,
                     easingType: 'linear',
@@ -333,8 +333,8 @@
 
         },
 
-        stickyHeader: function(e) {
-            $(window).scroll(function() {
+        stickyHeader: function (e) {
+            $(window).scroll(function () {
                 if ($(this).scrollTop() > 250) {
                     $('.header--sticky').addClass('sticky')
                 } else {
@@ -343,19 +343,19 @@
             })
         },
 
-        vedioActivation: function(e) {
-            $('#play-video').on('click', function(e) {
+        vedioActivation: function (e) {
+            $('#play-video').on('click', function (e) {
                 e.preventDefault();
                 $('#video-overlay').addClass('open');
                 $("#video-overlay").append('<iframe width="80%" height="80%" src="https://www.youtube.com/embed/7e90gBu4pas" frameborder="0" allowfullscreen></iframe>');
             });
 
-            $('.video-overlay, .video-overlay-close').on('click', function(e) {
+            $('.video-overlay, .video-overlay-close').on('click', function (e) {
                 e.preventDefault();
                 close_video();
             });
 
-            $(document).keyup(function(e) {
+            $(document).keyup(function (e) {
                 if (e.keyCode === 27) {
                     close_video();
                 }
@@ -366,8 +366,8 @@
             };
         },
 
-        mobileMenuActive: function(e) {
-            $('.humberger-menu').on('click', function(e) {
+        mobileMenuActive: function (e) {
+            $('.humberger-menu').on('click', function (e) {
                 e.preventDefault();
                 $('.popup-mobile-menu').addClass('menu-open');
                 imJs._html.css({
@@ -375,7 +375,7 @@
                 })
             });
 
-            $('.close-menu-activation, .popup-mobile-menu .primary-menu .nav-item a').on('click', function(e) {
+            $('.close-menu-activation, .popup-mobile-menu .primary-menu .nav-item a').on('click', function (e) {
                 e.preventDefault();
                 $('.popup-mobile-menu').removeClass('menu-open');
                 $('.has-droupdown > a').removeClass('open').siblings('.submenu').removeClass('active').slideUp('400');
@@ -384,7 +384,7 @@
                 })
             });
 
-            $('.popup-mobile-menu').on('click', function(e) {
+            $('.popup-mobile-menu').on('click', function (e) {
                 e.target === this && $('.popup-mobile-menu').removeClass('menu-open');
                 imJs._html.css({
                     overflow: ''
@@ -392,7 +392,7 @@
             });
 
 
-            $('.has-droupdown > a').on('click', function(e) {
+            $('.has-droupdown > a').on('click', function (e) {
                 e.preventDefault();
                 $(this).siblings('.submenu').toggleClass('active').slideToggle('400');
                 $(this).toggleClass('open');
@@ -402,7 +402,7 @@
             });
 
 
-            $('.nav-pills .nav-link').on('click', function(e) {
+            $('.nav-pills .nav-link').on('click', function (e) {
                 $('.rn-popup-mobile-menu').removeClass('menu-open');
                 imJs._html.css({
                     overflow: ''
@@ -412,7 +412,7 @@
 
         },
 
-        awsActivation: function(e) {
+        awsActivation: function (e) {
             AOS.init();
         },
 
@@ -421,3 +421,30 @@
 
 
 })(jQuery, window)
+
+
+// ! Leave a reply query
+// $(document).ready(function() {
+//     $("#replyForm").submit(function(event) {
+//       event.preventDefault(); // Prevent default form submission
+  
+//       var commentId = $("#commentId").val(); // Get the comment ID
+//       var replyText = $("#replyText").val(); // Get the reply text
+  
+//       $.ajax({
+//         type: "POST",
+//         url: "your_reply_processing_script.php", // Replace with your server-side script
+//         data: { commentId: commentId, replyText: replyText },
+//         success: function(response) {
+//           // Handle the successful response from the server
+//           // e.g., append the new reply to the comment section
+//           $("#comment-" + commentId).append("<p>" + replyText + "</p>"); 
+//           $("#replyForm")[0].reset(); // Clear the form
+//         },
+//         error: function(error) {
+//           // Handle any errors that occur during the AJAX request
+//           console.error("Error submitting reply:", error);
+//         }
+//       });
+//     });
+//   });

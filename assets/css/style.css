@@ -13507,16 +13507,14 @@ figcaption {
 .inner li {
     font-size: 18px;
     line-height: 30px;
-    color: var(--color-lightn);
+    color: var(--color-heading-wv);
     padding-top: 15px;
     list-style-type: '👉';
     padding-inline-start: 1ch;
     opacity: 0.9;
 }
 
-.inner li :hover {
-    color: white;
-}
+
 
 
 .slide .content .inner .description {
@@ -15378,7 +15376,7 @@ div#featured-project-carousel {
 }
 
 .personal-experience-inner .experience-list .resume-single-list:hover .inner .description {
-    color: var(--color-lightn);
+    color: white;
 }
 
 .personal-experience-inner .experience-list .resume-single-list:hover .inner::after {
