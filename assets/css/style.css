@@ -62,6 +62,7 @@
     --color-lightn: #c4cfde;
     --color-midgray: #878787;
     --color-light: #E4E6EA;
+    --color-lightk: #9aa0a9;
     --color-lighter: #CED0D4;
     --color-lightest: #F0F2F5;
     --color-border: #E6E6E6;
@@ -21154,6 +21155,16 @@ body.white-version {
 
 .white-version .slider-style-6 .cd-headline span {
     color: var(--color-white) !important;
+}
+
+.text-content .feature {
+    color: var(--color-light);
+    font-size: 20px;
+}
+
+.text-content ul li {
+    color: var(--color-body-white);
+    font-size: 15px;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */

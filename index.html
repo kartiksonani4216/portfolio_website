@@ -50,7 +50,7 @@
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#resume">Resume</a></li>
                             <li class="nav-item"><a class="nav-link smoth-animation" href="#portfolio">Portfolio</a>
                             </li>
-                            <li class="nav-item"><a class="nav-link smoth-animation" href="#footer">Footer</a></li>
+                            <li class="nav-item"><a class="nav-link smoth-animation" href="#footer">Contact</a></li>
                         </ul>
                         <!-- End Mainmanu Nav -->
                     </nav>
@@ -151,7 +151,7 @@
                                             </div>
                                             <div class="user-info-footer">
                                                 <div class="info">
-                                                    <i data-feather="file"></i>
+                                                    <i data-feather="code"></i>
                                                     <span>Flutter developer</span>
                                                 </div>
                                                 <div class="info">
@@ -1006,49 +1006,72 @@
 
         <!-- Doctor Appointment Dialog -->
         <div class="modal fade" id="doctorAppointment" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-dialog modal-dialog-centered modal-news" role="document">
                 <div class="modal-content">
+
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i data-feather="x"></i></span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <div class="row align-items-center">
-
-                            <div class="col-lg-6">
-                                <div class="portfolio-popup-thumbnail">
-                                    <div class="image">
-                                        <img class="w-100" src="assets/images/project/doctor.png" alt="slide">
-                                    </div>
-                                </div>
+                        <img src="assets/images/project/doctor.png" alt="news modal" class="img-fluid modal-feat-img">
+                        <div class="news-details">
+                            <h2 class="title" style="color: #F0F2F5;">Doctor Appointment</h2>
+                            <ul>
+                                <li>
+                                    <p class="mb--30">A comprehensive and responsive mobile solution for
+                                        <strong>Android</strong> and <strong>iOS</strong> platforms, designed to
+                                        streamline doctor and patient management. This project focuses on delivering a
+                                        seamless appointment booking experience while incorporating cutting-edge
+                                        features.
+                                    </p>
+                                </li>
+                            </ul>
+                            <br>
+                            <div class="text-content">
+                                <p><strong class="feature">Key Features:</strong></p>
+                                <ul>
+                                    <li><strong>Doctor & Patient Management System:</strong>
+                                        Efficient handling of
+                                        profiles and schedules.</li>
+                                    <li><strong>Appointment Booking:</strong> Easy scheduling with real-time updates
+                                        and confirmations.</li>
+                                    <li><strong>Payment Gateway Integration:</strong> Secure and fast transactions
+                                        using <strong>Stripe</strong>.</li>
+                                    <li><strong>Smooth Animations:</strong> Enhanced user experience with fluid
+                                        transitions.</li>
+                                    <li><strong>Multi-Language Support:</strong> Accessible in various languages for
+                                        global users.</li>
+                                    <li><strong>Map Functionality:</strong> Integrated with <strong>Google Maps
+                                            API</strong> for easy navigation to clinics.</li>
+                                    <li><strong>Push Notifications:</strong> Stay updated with reminders and
+                                        scheduled appointments via <strong>Firebase</strong>.</li>
+                                    <li><strong>Video Consultation:</strong> Enabled through <strong>Agora
+                                            SDK</strong> for remote doctor-patient interaction.</li>
+                                    <li><strong>API Integration:</strong> Powered by <strong>Dio Service</strong>
+                                        for seamless backend communication.</li>
+                                </ul>
+                                <br>
+                                <p><strong class="feature">Tools & Technologies:</strong></p>
+                                <ul>
+                                    <li><strong>State Management:</strong> Bloc</li>
+                                    <li><strong>Firebase:</strong> Cloud messaging & real-time database</li>
+                                    <li><strong>Video Calling:</strong> Agora SDK</li>
+                                    <li><strong>Payment Gateway:</strong> Stripe</li>
+                                    <li><strong>API:</strong> Dio Service</li>
+                                    <li><strong>Maps & Location:</strong> Google Maps API</li>
+                                    <li><strong>Platforms:</strong> Android, iOS</li>
+                                </ul>
+                                <br>
                             </div>
 
-                            <div class="col-lg-6">
-                                <div class="text-content">
-                                    <h3>
-                                        <span>Featured - Design</span> Doctor Appointment.
-                                    </h3>
-                                    <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
-                                    <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <!-- <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div> -->
+                            <p>This project exemplifies my ability to create functional and user-friendly
+                                applications that incorporate advanced features like real-time communication and
+                                secure payment gateways, providing an optimal experience for both doctors and
+                                patients.</p>
 
-                                </div>
-                                <!-- End of .text-content -->
-                            </div>
                         </div>
-                        <!-- End of .row Body-->
                     </div>
                 </div>
             </div>
@@ -1083,18 +1106,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                 </div>
                                 <!-- End of .text-content -->
                             </div>
@@ -1134,18 +1147,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                 </div>
                                 <!-- End of .text-content -->
                             </div>
@@ -1185,18 +1188,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                 </div>
                                 <!-- End of .text-content -->
                             </div>
@@ -1236,18 +1229,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
-
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                 </div>
                                 <!-- End of .text-content -->
                             </div>
@@ -1287,17 +1270,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
-                                    <div class="button-group mt--20">
-                                        <a href="#" class="rn-btn thumbs-icon">
-                                            <span>LIKE THIS</span>
-                                            <i data-feather="thumbs-up"></i>
-                                        </a>
-                                        <a href="#" class="rn-btn">
-                                            <span>VIEW PROJECT</span>
-                                            <i data-feather="chevron-right"></i>
-                                        </a>
-                                    </div>
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
 
                                 </div>
                                 <!-- End of .text-content -->
@@ -1338,7 +1312,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
                                             <span>LIKE THIS</span>
@@ -1389,7 +1364,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
                                             <span>LIKE THIS</span>
@@ -1440,7 +1416,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
                                             <span>LIKE THIS</span>
@@ -1491,7 +1468,8 @@
                                     <p class="mb--30">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                         Cupiditate distinctio assumenda explicabo veniam temporibus eligendi.</p>
                                     <p>Consectetur adipisicing elit. Cupiditate distinctio assumenda. dolorum alias
-                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!</p>
+                                        suscipit rerum maiores aliquam earum odit, nihil culpa quas iusto hic minus!
+                                    </p>
                                     <div class="button-group mt--20">
                                         <a href="#" class="rn-btn thumbs-icon">
                                             <span>LIKE THIS</span>
@@ -1536,28 +1514,37 @@
                         <div class="news-details">
                             <span class="date">2 May, 2021</span>
                             <h2 class="title">Digital Marketo to Their New Office.</h2>
-                            <p>Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
+                            <p>Nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer
+                                possim
                                 assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
                                 claritatem. Investigationes demonstraverunt lectores
                                 legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui
                                 sequitur mutationem consuetudium lectorum.</p>
                             <h4>Nobis eleifend option conguenes.</h4>
-                            <p>Mauris tempor, orci id pellentesque convallis, massa mi congue eros, sed posuere massa
-                                nunc quis dui. Integer ornare varius mi, in vehicula orci scelerisque sed. Fusce a massa
+                            <p>Mauris tempor, orci id pellentesque convallis, massa mi congue eros, sed posuere
+                                massa
+                                nunc quis dui. Integer ornare varius mi, in vehicula orci scelerisque sed. Fusce a
+                                massa
                                 nisi. Curabitur sit amet suscipit nisl. Sed eget
-                                nisl laoreet, suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in rutrum erat
+                                nisl laoreet, suscipit enim nec, viverra eros. Nunc imperdiet risus leo, in rutrum
+                                erat
                                 dignissim id.</p>
                             <p>Ut rhoncus vestibulum facilisis. Duis et lorem vitae ligula cursus venenatis. Class
-                                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                                himenaeos.
                                 Nunc vitae nisi tortor. Morbi leo nulla, posuere vel
-                                lectus a, egestas posuere lacus. Fusce eleifend hendrerit bibendum. Morbi nec efficitur
+                                lectus a, egestas posuere lacus. Fusce eleifend hendrerit bibendum. Morbi nec
+                                efficitur
                                 ex.</p>
                             <h4>Mauris tempor, orci id pellentesque.</h4>
                             <p>Nulla non ligula vel nisi blandit egestas vel eget leo. Praesent fringilla dapibus
-                                dignissim. Pellentesque quis quam enim. Vestibulum ultrices, leo id suscipit efficitur,
+                                dignissim. Pellentesque quis quam enim. Vestibulum ultrices, leo id suscipit
+                                efficitur,
                                 odio lorem rhoncus dolor, a facilisis neque mi ut ex.
-                                Quisque tempor urna a nisi pretium, a pretium massa tristique. Nullam in aliquam diam.
-                                Maecenas at nibh gravida, ornare eros non, commodo ligula. Sed efficitur sollicitudin
+                                Quisque tempor urna a nisi pretium, a pretium massa tristique. Nullam in aliquam
+                                diam.
+                                Maecenas at nibh gravida, ornare eros non, commodo ligula. Sed efficitur
+                                sollicitudin
                                 auctor. Quisque nec imperdiet purus, in ornare
                                 odio. Quisque odio felis, vestibulum et.
                             </p>
@@ -1625,7 +1612,8 @@
                     <ul class="popuptab-area nav nav-tabs" id="popuptab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active demo-dark" id="demodark-tab" data-toggle="tab" href="#demodark"
-                                role="tab" aria-controls="demodark" aria-selected="true">Dark Demo</a>
+                                role="tab" aria-controls="demodark" aria-selected="true">Dark
+                                Demo</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link demo-light" id="demolight-tab" data-toggle="tab" href="#demolight"
@@ -1679,7 +1667,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-consulting.html">Consulting</a></h3>
+                                                    <h3 class="title"><a href="home-consulting.html">Consulting</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -1767,7 +1756,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-developer.html">Developer</a></h3>
+                                                    <h3 class="title"><a href="index-developer.html">Developer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -1834,7 +1824,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-instructor.html">Instructor</a></h3>
+                                                    <h3 class="title"><a href="home-instructor.html">Instructor</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -1856,7 +1847,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="home-freelancer.html">Freelancer</a></h3>
+                                                    <h3 class="title"><a href="home-freelancer.html">Freelancer</a>
+                                                    </h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -1987,7 +1979,8 @@
                                                     </a>
                                                 </div>
                                                 <div class="inner">
-                                                    <h3 class="title"><a href="index-white-version.html">Main Demo</a>
+                                                    <h3 class="title"><a href="index-white-version.html">Main
+                                                            Demo</a>
                                                     </h3>
                                                 </div>
                                             </div>
@@ -2437,7 +2430,7 @@
             </div>
         </div>
         <div class="copyright text-center ptb--40 section-separator">
-            <p class="description">© 2021. All rights reserved by <a target="_blank" href="#">Your-Themes.</a></p>
+            <p class="description">Delivering visually stunning, high-performance Flutter apps with precision.</p>
         </div>
     </div>
     <!-- Rn footer area end -->
